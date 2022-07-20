@@ -1,16 +1,59 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.box {
+  margin: auto;
+  max-width: 27rem;
+  display: grid;
+  gap: 2rem;
 }
 
-* {
-  box-sizing: border-box;
+input[type="file"] {
+  display: none;
+}
+label,
+button {
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.file_name {
+  background-color: #6aab17;
+  color: #fff;
+}
+code {
+  display: grid;
+  gap: 4px;
+  padding: 1rem;
+  background-color: #000;
+}
+
+.output-item {
+  display: flex;
+  gap: 0.4rem;
+  font-family: monospace;
+  font-size: 14px;
+  color: #fff;
+}
+.output-item > *:first-child {
+  font-weight: 800;
+  color: #6aab17;
+}
+
+label {
+  display: inline-block;
+  background-color: #f2f2f2;
+}
+button {
+  background-color: #6aab17;
+  border: none;
+}
+select {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  background-color: transparent;
+  padding: 0.7rem 1rem;
 }
